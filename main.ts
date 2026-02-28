@@ -66,26 +66,6 @@ input.onButtonPressed(Button.A, function () {
         app += 1
     }
 })
-// script to run the whole menu/console reading
-input.onButtonPressed(Button.AB, function () {
-    if (select_screen == 0) {
-        if (app == 0) {
-            basic.showString("how to use")
-        }
-        if (app == 1) {
-            basic.showString("messages")
-        }
-        if (app == 2) {
-            basic.showString("voice record")
-        }
-        if (app == 3) {
-            basic.showString("rock paper sciccers")
-        }
-        if (app == 4) {
-            basic.showString("tennis for 1")
-        }
-    }
-})
 radio.onReceivedString(function (receivedString) {
     basic.showLeds(`
         # # # # #

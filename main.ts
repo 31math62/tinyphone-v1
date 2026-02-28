@@ -96,23 +96,17 @@ input.onButtonPressed(Button.B, function () {
             select_screen = 1
             basic.showString("messages")
             while (0 == 0) {
-                if (app == 1) {
-                    select_screen = 1
-                    basic.showString("messages")
-                    while (0 == 0) {
-                        if (input.buttonIsPressed(Button.A)) {
-                            radio.setTransmitPower(100)
-                            radio.sendString("Hi!")
-                        }
-                        if (input.buttonIsPressed(Button.AB)) {
-                            radio.setTransmitPower(100)
-                            radio.sendString("How are you?")
-                        }
-                        if (input.buttonIsPressed(Button.B)) {
-                            radio.setTransmitPower(100)
-                            radio.sendString("I am a person (maybe).")
-                        }
-                    }
+                if (input.buttonIsPressed(Button.A)) {
+                    radio.setTransmitPower(100)
+                    radio.sendString("Hi!")
+                }
+                if (input.buttonIsPressed(Button.AB)) {
+                    radio.setTransmitPower(100)
+                    radio.sendString("How are you?")
+                }
+                if (input.buttonIsPressed(Button.B)) {
+                    radio.setTransmitPower(100)
+                    radio.sendString("I am a person (maybe).")
                 }
             }
         }

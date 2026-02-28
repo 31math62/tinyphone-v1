@@ -90,11 +90,15 @@ input.onButtonPressed(Button.B, function () {
                 }
                 if (input.buttonIsPressed(Button.AB)) {
                     radio.setTransmitPower(100)
-                    radio.sendString("I am a person (maybe).")
+                    radio.sendString("A+B worked")
                 }
                 if (input.buttonIsPressed(Button.B)) {
                     radio.setTransmitPower(100)
                     radio.sendString("How are you?")
+                }
+                if (input.logoIsPressed()) {
+                    radio.setTransmitPower(100)
+                    radio.sendString("I am a person (maybe).")
                 }
             }
         }

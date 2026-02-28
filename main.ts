@@ -109,11 +109,11 @@ input.onButtonPressed(Button.B, function () {
                 }
                 if (input.buttonIsPressed(Button.AB)) {
                     radio.setTransmitPower(100)
-                    radio.sendString("How are you?")
+                    radio.sendString("I am a person (maybe).")
                 }
                 if (input.buttonIsPressed(Button.B)) {
                     radio.setTransmitPower(100)
-                    radio.sendString("I am a person (maybe).")
+                    radio.sendString("How are you?")
                 }
             }
         }

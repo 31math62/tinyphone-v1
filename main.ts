@@ -66,35 +66,53 @@ input.onButtonPressed(Button.A, function () {
         app += 1
     }
 })
+// script to run the whole menu/console reading
+input.onButtonPressed(Button.AB, function () {
+    if (select_screen == 0) {
+        if (app == 0) {
+            basic.showString("how to use")
+        }
+        if (app == 1) {
+            basic.showString("messages")
+        }
+        if (app == 2) {
+            basic.showString("voice record")
+        }
+        if (app == 3) {
+            basic.showString("rock paper sciccers")
+        }
+        if (app == 4) {
+            basic.showString("tennis for 1")
+        }
+    }
+})
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
 })
 // script to run the whole menu/console
 input.onButtonPressed(Button.B, function () {
     if (select_screen == 0) {
-        if (app == 0) {
-            select_screen = 1
-            basic.showString("how to use")
-            basic.showString("Hello!")
-            basic.showString("To navigate the menu press A")
-            basic.showString("when you reach the app, you want to use press B")
-            basic.showString("the end now restart the program and use these rules")
-        }
         if (app == 1) {
             select_screen = 1
             basic.showString("messages")
             while (0 == 0) {
-                if (input.buttonIsPressed(Button.A)) {
-                    radio.setTransmitPower(100)
-                    radio.sendString("Hi!")
-                }
-                if (input.buttonIsPressed(Button.AB)) {
-                    radio.setTransmitPower(100)
-                    radio.sendString("How are you?")
-                }
-                if (input.buttonIsPressed(Button.B)) {
-                    radio.setTransmitPower(100)
-                    radio.sendString("I am a person (maybe).")
+                if (app == 1) {
+                    select_screen = 1
+                    basic.showString("messages")
+                    while (0 == 0) {
+                        if (input.buttonIsPressed(Button.A)) {
+                            radio.setTransmitPower(100)
+                            radio.sendString("Hi!")
+                        }
+                        if (input.buttonIsPressed(Button.AB)) {
+                            radio.setTransmitPower(100)
+                            radio.sendString("How are you?")
+                        }
+                        if (input.buttonIsPressed(Button.B)) {
+                            radio.setTransmitPower(100)
+                            radio.sendString("I am a person (maybe).")
+                        }
+                    }
                 }
             }
         }
@@ -231,6 +249,6 @@ basic.showLeds(`
     # # # # #
     `)
 between_time = 1
-app = 0
+app = 1
 select_screen = 0
 record.setMicGain(record.AudioLevels.Low)

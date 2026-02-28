@@ -9,7 +9,9 @@
         "datalogger": "*",
         "EPXDisplay": "github:microsoft/expressivepixelsmakecode#v1.3.5",
         "SSD1306_OLED": "github:muselab/pxt-muselab-oled-v2#v2.0.20",
-        "radio-broadcast": "*"
+        "radio-broadcast": "*",
+        "audio-samples": "*",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.6"
     },
     "files": [
         "main.blocks",

@@ -96,6 +96,13 @@ input.onButtonPressed(Button.B, function () {
             select_screen = 1
             basic.showString("messages")
             while (0 == 0) {
+                basic.showLeds(`
+                    # . # . .
+                    . # # . #
+                    . # # # .
+                    . # # # .
+                    # . # # #
+                    `)
                 if (input.buttonIsPressed(Button.A)) {
                     radio.setTransmitPower(100)
                     radio.sendString("Hi!")

@@ -87,6 +87,13 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 radio.onReceivedString(function (receivedString) {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
     basic.showString(receivedString)
 })
 // script to run the whole menu/console
@@ -95,8 +102,8 @@ input.onButtonPressed(Button.B, function () {
         if (app == 1) {
             select_screen = 1
             basic.showString("messages")
+            basic.showIcon(IconNames.Snake)
             while (0 == 0) {
-                basic.showIcon(IconNames.Snake)
                 if (input.buttonIsPressed(Button.A)) {
                     radio.setTransmitPower(100)
                     radio.sendString("Hi!")
@@ -246,4 +253,4 @@ basic.showLeds(`
 between_time = 1
 app = 1
 select_screen = 0
-record.setMicGain(record.AudioLevels.Low)
+record.setMicGain(record.AudioLevels.Medium)

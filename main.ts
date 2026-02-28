@@ -67,9 +67,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 radio.onReceivedString(function (receivedString) {
-    if (app == 1) {
-        basic.showString(receivedString)
-    }
+    basic.showString(receivedString)
 })
 // script to run the whole menu/console
 input.onButtonPressed(Button.B, function () {

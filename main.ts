@@ -113,7 +113,7 @@ input.onButtonPressed(Button.B, function () {
             select_screen = 1
             basic.showString("rock paper sciccers")
             while (0 == 0) {
-                if (input.isGesture(Gesture.Shake)) {
+                if (input.buttonIsPressed(Button.A)) {
                     hand = randint(1, 3)
                     if (hand == 1) {
                         basic.showLeds(`

@@ -11,7 +11,9 @@
         "SSD1306_OLED": "github:muselab/pxt-muselab-oled-v2#v2.0.20",
         "radio-broadcast": "*",
         "audio-samples": "*",
-        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.6"
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.6",
+        "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6",
+        "microturtle": "github:microsoft/pxt-microturtle#v0.0.10"
     },
     "files": [
         "main.blocks",

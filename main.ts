@@ -220,6 +220,27 @@ input.onButtonPressed(Button.B, function () {
                 }
             }
         }
+        if (app == 5) {
+            basic.showString("Draw program")
+            select_screen = 1
+            while (0 == 0) {
+                if (input.logoIsPressed()) {
+                    turtle.pen(TurtlePenMode.Down)
+                }
+                if (input.isGesture(Gesture.Shake)) {
+                    turtle.pen(TurtlePenMode.Up)
+                }
+                if (input.buttonIsPressed(Button.A)) {
+                    turtle.forward(1)
+                }
+                if (input.buttonIsPressed(Button.B)) {
+                    turtle.turnRight()
+                }
+                if (input.buttonIsPressed(Button.AB)) {
+                    turtle.turnLeft()
+                }
+            }
+        }
     }
 })
 let sprite: game.LedSprite = null

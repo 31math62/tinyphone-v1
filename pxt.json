@@ -14,7 +14,8 @@
         "audio-samples": "*",
         "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.6",
         "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6",
-        "microturtle": "github:microsoft/pxt-microturtle#v0.0.10"
+        "microturtle": "github:microsoft/pxt-microturtle#v0.0.10",
+        "keyboard": "github:joemcflo13/keyboard#v2.4.1"
     },
     "files": [
         "main.blocks",
@@ -26,7 +27,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "8.0.18",
+        "target": "9.0.12",
         "targetId": "microbit"
     },
     "supportedTargets": [

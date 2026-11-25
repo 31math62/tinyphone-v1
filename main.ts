@@ -56,14 +56,48 @@ input.onButtonPressed(Button.A, function () {
             # # # # #
             `)
         control.waitMicros(between_time)
-        basic.showLeds(`
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            `)
         app += 1
+        if (app == 1) {
+            basic.showLeds(`
+                . . . . .
+                . # . # .
+                # . # . #
+                # . # . #
+                # . # . #
+                `)
+        } else if (app == 2) {
+            basic.showLeds(`
+                . . . . .
+                # . . . #
+                . # . # .
+                . # . # .
+                . . # . .
+                `)
+        } else if (app == 3) {
+            basic.showLeds(`
+                # # # . .
+                # . # . .
+                # # # . .
+                # . # . .
+                # . . # .
+                `)
+        } else if (app == 4) {
+            basic.showLeds(`
+                # # # # #
+                . . # . .
+                . . # . .
+                . . # . .
+                . . # . .
+                `)
+        } else if (app == 5) {
+            basic.showLeds(`
+                # # . . #
+                # . # # .
+                # . # # .
+                # . # # .
+                # # . # .
+                `)
+        }
     }
 })
 radio.onReceivedString(function (receivedString) {
@@ -249,11 +283,11 @@ let select_screen = 0
 let app = 0
 let between_time = 0
 basic.showLeds(`
-    # # # # #
-    # # # # #
-    # # # # #
-    # # # # #
-    # # # # #
+    . . . . .
+    . # . # .
+    # . # . #
+    # . # . #
+    # . # . #
     `)
 between_time = 1
 app = 1
